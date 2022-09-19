@@ -30,7 +30,7 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = ['*','talky.herokuapp.com']
 
-mimetypes.add_type("text/css", ".css", True)
+
 # Application definition
 
 INSTALLED_APPS = [
