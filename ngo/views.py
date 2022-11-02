@@ -7,3 +7,6 @@ def Index(request):
 
 def About(request):
     return render(request, 'ngo/about.html')
+
+def memberRegister(request):
+    return render(request, 'ngo/member_register.html')

@@ -1,0 +1,119 @@
+{% extends 'ngo/base.html' %}
+{% block content %}
+<div class="bread-crumb">
+    <div class="auto-container">
+        Pages  &ensp;<span class="fa fa-angle-right"></span>&ensp; <a href="#" class="ative">Donation</a>
+    </div>
+</div>
+    <!--Contact Us Section-->
+    <section class="contact-section clearfix">
+        <div class="auto-container">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="sec-title">
+                    <h2>Make a Donation</h2>
+                </div>
+                <div class="sec-text">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <br>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="form">
+
+                    <form id="contact-form" class="donation-form" method="post" action="http://world5.commonsupport.com/html/volunteer/sendemail.php">
+                        <div class="row clearfix">
+                            <div class="form-group col-md-4 col-sm-6 col-xs-12">
+                                <label for="yourf-name">First Name</label>
+                                <div class="form-group-inner">
+                                    <div class="field-outer">
+                                        <input type="text" name="username" id="yourf-name" placeholder="First Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4 col-sm-6 col-xs-12">
+                                <label for="yourf-name">Last Name</label>
+                                <div class="form-group-inner">
+                                    <div class="field-outer">
+                                        <input type="text" name="username" id="yourl-name" placeholder="Last Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4 col-sm-12 col-xs-12">
+                                <label for="your-email">Email</label>
+                                <div class="form-group-inner">
+                                    <div class="field-outer">
+                                        <input type="text" name="email" id="your-email" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6 col-sm-12 col-xs-12">
+                                <label for="your-email">Donation Type</label>
+                                <div class="form-group-inner radio">
+                                    <div class="field-outer ">
+                                        <span><input type="radio"> One time</span>
+                                        <span><input type="radio"> Weekly</span>
+                                        <span><input type="radio"> Monthly</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6 col-sm-12 col-xs-12">
+                                <label for="your-email">Donation Amount</label>
+                                <div class="form-group-inner radio">
+                                    <div class="field-outer ">
+                                        <span><input type="radio"> 10 USD</span>
+                                        <span><input type="radio"> 50 USD</span>
+                                        <span><input type="radio"> 100 USD</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                <label for="your-email">Card Number</label>
+                                <div class="form-group-inner">
+                                    <div class="field-outer">
+                                        <input type="text" placeholder="Your Card Number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6 col-sm-12 col-xs-12">
+                                <label for="your-email">MM/YY</label>
+                                <div class="form-group-inner">
+                                    <div class="field-outer">
+                                        <input type="text" placeholder="MM/YY">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6 col-sm-12 col-xs-12">
+                                <label for="your-email">CVC</label>
+                                <div class="form-group-inner">
+                                    <div class="field-outer">
+                                        <input type="text" placeholder="CVC">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                <label for="your-email">I give donation for: </label>
+                                <div class="form-group-inner">
+                                    <div class="field-outer">
+                                        <select>
+                                            <option value="1">Charity Foundation</option>
+                                            <option value="1">Charity Foundation</option>
+                                            <option value="1">Charity Foundation</option>
+                                            <option value="1">Charity Foundation</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group-inner">
+                                    <textarea name="message" placeholder="Your Message"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-md-12 col-sm-12 col-xs-12 text-right">
+                                <button class="hvr-bounce-to-right" type="submit" name="submit-form">Send Message &ensp; <span class="icon flaticon-envelope32"></span></button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
