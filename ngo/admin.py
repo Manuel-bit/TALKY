@@ -22,3 +22,15 @@ class AnnualDonorAdmin(admin.ModelAdmin):
     list_display = ('first_name', 'last_name','email', 'phone', 'location')
     ordering = ('first_name',)
     search_fields = ('first_name','phone','email', 'id_number')
+
+
+@admin.register(GaleryImage)
+class GaleryImageAdmin(admin.ModelAdmin):
+    list_display = ('image',)
+
+
+@admin.register(Message)
+class MessageAdmin(admin.ModelAdmin):
+    list_display = ('subject', 'name', 'email')
+    ordering = ('name',)
+    search_fields = ('name', 'email')

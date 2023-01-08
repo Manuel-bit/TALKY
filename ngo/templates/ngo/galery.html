@@ -1,0 +1,44 @@
+{% extends 'ngo/base.html' %}
+{% block content %}
+<br><br><br>
+<div class="bread-crumb">
+    <div class="auto-container">
+        Pages  &ensp;<span class="fa fa-angle-right"></span>&ensp; <a href="#" class="ative">Our Galery</a>
+    </div>
+</div>
+
+<section id="project-version-one">
+    <div class="container">
+        <div class="normal-gallery" id="image-gallery-mix">
+            {% for image_obj in galery_images %}
+            <div class="col-lg-4 col-sm-6 col-xs-12 ">
+                <div class="img-wrap">
+                    <img src="{{image_obj.image.url}}" alt="" style="width: 350px;">
+                    <div class="content-wrap">
+                        <!-- <div class="border">
+                            <div class="content">
+                                <a href="images/gallery-v1/1.jpg" class="fancybox"><h4>Awesome Gallery</h4></a>
+                                <a href="images/gallery-v1/1.jpg" class="fancybox"><span>Awesome Gallery Caption</span></a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="parallax-section" style="background-image:url(../static/images/parallax/image-1.jpg);">
+    <div class="auto-container">
+        <div class="text-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+            <h2>Are you ready to volunteer?</h2>
+            <h3>start one of our programm today and help people in need</h3>
+            <div class="line"></div>
+            <a class="theme-btn light-btn" href="#">BECOME A VOLUNTEER</a>
+            <a class="theme-btn light-btn" href="#">MAKE A DONATION</a>
+
+        </div>
+    </div>
+</section>
+{% endblock %}

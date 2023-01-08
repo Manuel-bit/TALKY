@@ -42,3 +42,17 @@ class AnnualDonor(models.Model):
 
     def __str__(self):
         return self.first_name + ' ' + self.last_name
+
+
+class GaleryImage(models.Model):
+    image = models.ImageField()
+
+
+class Message(models.Model):
+    name = models.CharField(max_length=255)
+    email = models.EmailField()
+    subject = models.CharField(max_length=255)
+    message = models.CharField(max_length=500)
+
+    def __str__(self):
+        return self.name

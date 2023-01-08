@@ -50,8 +50,10 @@
             <div class="header-lower">
                 <div class="auto-container clearfix">
                     <!--Logo-->
-                    <div class="logo"><a href="index-2.html"><img src="static/images/logo.jpg" style="height: 70px;"
-                                alt="Volunteer" title="Volunteer"></a></div>
+                    <div class="logo">
+                        <a href=""><img src="#"
+                                alt="Volunteer" title="Volunteer" style="width: 300;">
+                            </a></div>
 
                     <!--Right Container-->
                     <div class="right-cont clearfix">
@@ -75,9 +77,8 @@
                                     </li>
                                     <li class="dropdown"><a href="#">Pages</a>
                                         <ul class="submenu">
-                                            <li><a href="#">About Us</a></li>
-                                            <li><a href="#">Features</a></li>
-                                            <li><a href="#">Sevices</a></li>
+                                            <li><a href="#About-Us">About Us</a></li>
+                                            <li><a href="#Services">Sevices</a></li>
 
                                             <!-- <li class="dropdown">
                                                 <a href="testimonial-v1.html">Testimonials</a>
@@ -86,7 +87,7 @@
                                                     <li><a href="testimonial-v2.html">Testimonial V2</a></li>
                                                 </ul>
                                             </li> -->
-                                            <li class="dropdown"><a href="#">Gallery</a>
+                                            <li class="dropdown"><a href="{% url 'galery' %}">Gallery</a>
                                             </li>
                                             <li><a href="#">Donation</a></li>
                                             <li><a href="#">Become a Volunteer</a></li>
